@@ -1,5 +1,5 @@
 #!/usr/bin/python
 
-from farahani import calculate_repair
+from farahani.session2 import calculate_repair
 
 calculate_repair()
