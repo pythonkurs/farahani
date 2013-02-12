@@ -8,6 +8,8 @@ class alter_directory(object):
         self.cu_path = os.getcwd()
         os.chdir(self.neue_path)
         
+    def __enter__(self):
+        os.chdir(self.neue_path)
         
     def __exit__(self):
         os.chdir(self.cu_path)
